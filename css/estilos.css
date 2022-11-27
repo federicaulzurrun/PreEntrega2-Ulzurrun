@@ -6,24 +6,21 @@
   height: auto;
   width: auto;
 }
-
 html {
   scroll-behavior: smooth;
   background-color: #fff0f5;
   height: auto;
   width: auto;
 }
-
 .conteiner {
   min-width: 320px;
   width: 100%;
   height: auto;
 }
-
 body {
   background-color: #fff0f5;
+  height: auto;
 }
-
 header {
   min-width: 320px;
   width: 100%;
@@ -112,28 +109,40 @@ header .nav-2 li a {
   margin: 5px;
   border-left: 5px;
 }
-
+header .carrito{
+  max-height: 20px;
+}
+header .carrito i{
+  color: #000;
+}
 .main {
   min-width: 320px;
   width: 100%;
   height: auto;
   max-height: 600px;
+  color:#ffb6b9 ;
 }
-.main .rowmain {
+.main .rowmain-carrousel {
   min-width: 320px;
-  width: 100%;
+  max-width: 1100px;
   height: auto;
   max-height: 600px;
+  margin: 40px;
+  padding: 0px;
+  align-items: center;
 }
-.main .rowmain .carousel-inner img {
-  max-height: 320px;
+.main .rowmain-carrousel .carousel-inner img {
+  min-height: 320px;
   min-width: 320px;
   width: 100%;
-  text-align: center;
 }
-
+.main .rowmain-carrousel .carouselslide{
+  min-width: 320px;
+  max-width: 1000px;
+  height: auto;
+}
 aside {
-  min-width: 300px;
+  max-width: 300px;
   width: 100%;
   height: auto;
   font-family: "Nunito Sans", sans-serif;
@@ -148,7 +157,6 @@ aside h2 {
 aside p {
   padding: 10px;
 }
-
 .caja {
   min-height: 700px;
   height: auto;
@@ -181,7 +189,6 @@ aside p {
   height: 100%;
   min-height: 100px;
 }
-
 .tabladetalles {
   min-width: 320px;
   width: 100%;
@@ -217,7 +224,6 @@ aside p {
   text-transform: capitalize;
   font-size: 13px;
 }
-
 .productospag {
   display: grid;
   grid-template-columns: 40% 60%;
@@ -295,7 +301,6 @@ aside p {
   margin: 0px;
   padding: 0px;
 }
-
 .mainregistrarse {
   min-width: 320px;
   width: 100%;
@@ -310,7 +315,6 @@ aside p {
 .mainregistrarse h3 {
   font-size: 20px;
 }
-
 .comunidad {
   min-width: 280px;
   width: 100%;
@@ -342,7 +346,6 @@ aside p {
 .comunidad form button {
   margin-top: 10px;
 }
-
 .ingresar {
   min-width: 320px;
   width: 100%;
@@ -361,7 +364,6 @@ aside p {
   font-size: 20px;
   text-transform: capitalize;
 }
-
 footer {
   min-width: 320px;
   width: 100%;
@@ -407,7 +409,6 @@ footer .copy {
   margin-left: 20px;
   background-color: #c4e9e4;
 }
-
 .subir {
   height: 40px;
   width: 40px;
@@ -425,7 +426,6 @@ footer .copy {
   color: #000;
   background-color: #9ed2e4;
 }
-
 @media only screen and (min-width: 500px) {
   .conteiner {
     min-width: 500px;
@@ -666,7 +666,7 @@ footer .copy {
     display: grid;
     grid-template-columns: 50% 50%;
     -moz-column-gap: 20px;
-         column-gap: 20px;
+    column-gap: 20px;
   }
   .productospag .cuerpoprod .galeriasw .card {
     font-size: 20px;
@@ -804,9 +804,10 @@ footer .copy {
     font-size: 23px;
   }
   aside {
-    min-width: 740px;
+    min-width: 150px;
     width: 100%;
     height: auto;
+    transform: translate(1100px, -350px);
   }
   aside h2 {
     font-size: 40px;
@@ -849,7 +850,7 @@ footer .copy {
     display: grid;
     grid-template-columns: 50% 50%;
     -moz-column-gap: 20px;
-         column-gap: 20px;
+    column-gap: 20px;
   }
   .productospag .cuerpoprod .galeriasw .card {
     font-size: 20px;
@@ -946,7 +947,7 @@ footer .copy {
     background-color: #c4e9e4;
   }
 }
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 1100px) {
   .conteiner {
     min-width: 740px;
     width: 100%;
@@ -988,7 +989,7 @@ footer .copy {
     font-size: 23px;
   }
   .main {
-    min-width: 900px;
+    min-width: 700px;
     width: 100%;
     height: auto;
     max-height: 600px;
@@ -1008,9 +1009,10 @@ footer .copy {
     text-align: center;
   }
   aside {
-    min-width: 740px;
+    min-width: 200px;
     width: 100%;
     height: auto;
+    transform: translate(1200px, -390px);
   }
   aside h2 {
     font-size: 40px;
@@ -1053,7 +1055,7 @@ footer .copy {
     display: grid;
     grid-template-columns: 30% 30% 30%;
     -moz-column-gap: 25px;
-         column-gap: 25px;
+    column-gap: 25px;
   }
   .productospag .cuerpoprod .galeriasw .card {
     font-size: 20px;
@@ -1150,44 +1152,292 @@ footer .copy {
     background-color: #c4e9e4;
   }
 }
-@media only screen and (min-width: 1100px) {
-  .main {
-    min-width: 900px;
-    width: 100%;
-    height: auto;
-    max-height: 600px;
+@media only screen and (min-width: 1400px) {
+  header{
+    height: 250px;
   }
-  .main .rowmain {
-    min-width: 900px;
+  header .envios{
+    height: 35px;
+  }
+  header .envios p{
+    font-size: 25px;
+  }
+  header .nav-1{
+    height: 50px;
+  }
+  header .nav-1 li a{
+    font-size: 30px;
+  }
+  header .nav-1 .carrito{
+    margin-right: 35px;
+  }
+  header .logo{
+    height: 100px;
+    font-size: 100px;
+    margin-left: 40px;
+    transform: translateY(-30px);
+  }
+  header .nav-2 li{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  header .nav-2 li a{
+    font-size: 35px;
+  }
+  .main {
+    max-width: 1000px;
     width: 100%;
     height: auto;
-    max-height: 600px;
-    padding-left: 140px;
-    padding-right: 140px;
+    max-height: 800px;
+    position:none ;  
+    transform: translateX(-50px);
+  }
+  .main .rowmain-carrousel {
+    max-width: 1000px;
+    width: 100%;
+    height: auto;
+    max-height: 800px;
+    margin: 0px;
+  }
+  .main .carousel-inner{
+    padding: 0px;
+    position: initial;
+    margin-left: 100px;
+  }
+  .main .carousel-item img{
+    height: 500px;
   }
   aside {
-    min-width: 900px;
+    max-width: 550px;
     width: 100%;
-    height: auto;
+    height: 300px;
+    transform: translate(1100px, -500px);
   }
   aside h2 {
     font-size: 40px;
     padding-left: 10px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-transform: uppercase;
   }
   aside p {
-    padding: 10px;
-    font-size: 18px;
-    padding-left: 45px;
-    padding-right: 55px;
+    margin-top: 35px;
+    padding: 0px;
+    font-size: 26px;
   }
   .caja {
-    height: 1000px;
-    width: 1250px;
-    padding-left: 115px;
+    height: 1300px;
+    max-width: 1700px;
+    width: 100%;
+    row-gap: 100px;
+    grid-template-rows: 50% 50%;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    transform: translateY(-150px);
   }
   .caja a {
+    font-size: 35px;
+    transform: translateX(-50px);
+  }
+  footer{
+    height: 200px;
+  }
+  footer .redes {
+    size: 60px;
+  }
+  footer .redes a {
+    size: 120px;
+  }
+  footer .redes i {
+    size: 110px;
+  }
+  footer .redes p {
+    font-size: 25px;
+  }
+  footer .copy {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (min-width: 1700px){
+  .main {
+    max-width: 1000px;
+    width: 100%;
+    height: auto;
+    max-height: 800px;
+    position:none ;  
+    transform: translateX(-50px);
+  }
+  .main .rowmain-carrousel {
+    max-width: 1000px;
+    width: 100%;
+    height: auto;
+    max-height: 800px;
+    margin: 0px;
+  }
+  .main .carousel-inner{
+    padding: 0px;
+    position: initial;
+    margin-left: 100px;
+  }
+  .main .carousel-item img{
+    height: 500px;
+  }
+  aside {
+    max-width: 600px;
+    min-width: 540px;
+    width: 100%;
+    height: 300px;
+    transform: translate(1100px, -500px);
+  }
+  aside h2 {
+    font-size: 40px;
+    padding-left: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-transform: uppercase;
+  }
+  aside p {
+    margin-top: 35px;
+    padding: 0px;
+    font-size: 26px;
+  }
+  .caja {
+    height: 1300px;
+    min-width: 1700px;
+    width: 100%;
+    padding: 0px;
+    row-gap: 100px;
+    grid-template-rows: 50% 50%;
+    margin-bottom: 50px;
+    margin-left: 70px;
+  }
+  .caja a {
+    font-size: 35px;
+    transform: translateX(-50px);
+  }
+  footer{
+    height: 200px;
+  }
+  footer .redes {
+    size: 60px;
+  }
+  footer .redes a {
+    size: 120px;
+  }
+  footer .redes i {
+    size: 110px;
+  }
+  footer .redes p {
+    font-size: 25px;
+  }
+  footer .copy {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (min-width: 1900px){
+  header{
+    height: 250px;
+  }
+  header .envios{
+    height: 35px;
+  }
+  header .envios p{
+    font-size: 25px;
+  }
+  header .nav-1{
+    height: 50px;
+    
+  }
+  header .nav-1 li a{
+    font-size: 30px;
+  }
+  header .nav-1 .carrito{
+    margin-right: 35px;
+  }
+  header .logo{
+    height: 100px;
+    font-size: 100px;
+    margin-left: 40px;
+    transform: translateY(-30px);
+  }
+  header .nav-2 li{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  header .nav-2 li a{
+    font-size: 35px;
+  }
+  .main {
+    width: 1300px;
+    height: auto;
+    max-height: 800px;
+    position:initial ;  
+  }
+  .main .rowmain-carrousel {
+    width: 1300px;
+    height: auto;
+    max-height: 800px;
+    margin-right: 0px;
+  }
+  .main .carousel-inner{
+    padding: 0px;
+    position: initial;
+    margin-left: 100px;
+  }
+  .main .carousel-item img{
+    height: 500px;
+  }
+  aside {
+    min-width: 650px;
+    width: 100%;
+    height: 200px;
+    transform: translate(1250px, -540px);
+  }
+  aside h2 {
+    font-size: 50px;
+    padding-left: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-transform: uppercase;
+  }
+  aside p {
+    margin-top: 35px;
+    padding: 0px;
+    font-size: 29px;
+  }
+  .caja {
+    height: 700px;
+    width: 1900px;
+    grid-template-columns: 25% 25% 25% 25%;
+    padding: 0px;
+    grid-template-rows: none;
+    transform: translate(80px, -70px);
+  }
+  .caja .img-fluid{
+    height: 600px;
+  }
+  .caja a {
+    font-size: 30px;
+    transform: translateX(-25px);
+  }
+  footer{
+    height: 200px;
+  }
+  footer .redes {
+    size: 60px;
+  }
+  footer .redes a {
+    size: 120px;
+  }
+  footer .redes i {
+    size: 110px;
+  }
+  footer .redes p {
+    font-size: 25px;
+  }
+  footer .copy {
     font-size: 25px;
   }
 }/*# sourceMappingURL=estilos.css.map */
