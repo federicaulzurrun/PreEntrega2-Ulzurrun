@@ -364,6 +364,13 @@ aside p {
   font-size: 20px;
   text-transform: capitalize;
 }
+.productoscarrito{
+  height: auto;
+}
+.totalcompra{
+  width: 1000px;
+  height: auto;
+}
 footer {
   min-width: 320px;
   width: 100%;
